@@ -2,6 +2,10 @@
 
 Mini location.hash update system
 
+[![Browser support](https://ci.testling.com/bpierre/minihash.png)](https://ci.testling.com/bpierre/minihash)
+
+[![Build Status](https://travis-ci.org/bpierre/minihash.png?branch=master)](https://travis-ci.org/bpierre/minihash)
+
 ## Usage
 
 ```js
