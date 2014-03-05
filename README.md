@@ -6,6 +6,8 @@ Mini location.hash update system
 
 [![Build Status](https://travis-ci.org/bpierre/minihash.png?branch=master)](https://travis-ci.org/bpierre/minihash)
 
+![minihash illustration](http://scri.ch/lrk.png)
+
 ## Usage
 
 ```js
