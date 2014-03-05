@@ -1,6 +1,8 @@
 var test = require('tape');
 var createHash = require('../');
 
+window.location.hash = '';
+
 function reset(hash) {
   if (hash && hash.stop) hash.stop();
   window.location.hash = '';
