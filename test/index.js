@@ -21,7 +21,7 @@ test('hash update', function(t) {
   var hash = createHash('', updated);
 
   t.equal(hash.value, '');
-  t.equal(window.location.hash, '');
+  t.equal(window.location.hash.replace(/^#/, ''), '');
 
   updateValue = 'foo';
   hash.value = 'foo';
