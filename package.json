@@ -1,7 +1,7 @@
 {
   "name": "minihash",
   "description": "A simple wrapper around window.location.hash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Pierre Bertet <bonjour@pierrebertet.net> (http://pierrebertet.net/)",
   "license": "MIT",
   "repository": {
