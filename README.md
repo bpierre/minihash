@@ -1,6 +1,6 @@
 # minihash [![Build Status](https://travis-ci.org/bpierre/minihash.png?branch=master)](https://travis-ci.org/bpierre/minihash)
 
-Mini location.hash update system
+Mini location.hash update system.
 
 <p align="center"><img width="434" height="393" alt="minihash illustration" src="http://scri.ch/lrk.png"></p>
 
