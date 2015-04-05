@@ -41,6 +41,7 @@ module.exports = function createHash(prefix, update) {
 
   var rmHashChange = hashChange(prefix, function() {
     var value = getHash(prefix);
+    if (value === _value) return;
     _value = setHash(prefix, value);
     update(_value);
   });

@@ -16,10 +16,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tape": "^2.10.2",
-    "testling": "^1.6.0",
     "browserify": "^3.32.0",
-    "coverify": "^1.0.6"
+    "coverify": "^1.0.6",
+    "tape": "^4.0.0",
+    "testling": "^1.6.0"
   },
   "testling": {
     "files": "test/*.js",

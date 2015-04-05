@@ -36,6 +36,35 @@ test('hash update', function(t) {
     reset(hash);
   };
   window.location.hash = 'bar';
+
+});
+
+test('an updated should be fired once', function(t) {
+  var updateReceived = false;
+
+  var hash = createHash('', function(value) {
+    setTimeout(function() {
+
+      // Update triggered a second time
+      if (updateReceived) {
+        return t.fail('the update function should be called once');
+      }
+
+      // This should not trigger any update
+      hash.value = 'foo';
+
+      // Update received
+      if (value === 'foo') {
+        updateReceived = true;
+        t.pass('update received');
+        setTimeout(function() {
+          reset(hash);
+          t.end();
+        }, 0);
+      }
+    }, 0);
+  });
+  hash.value = 'foo';
 });
 
 test('no parameters', function(t) {
@@ -75,16 +104,14 @@ test('prefix', function(t) {
   var afterUpdate = null;
   function updated(value) {
     t.equal(value, updateValue);
-    if (afterUpdate) setTimeout(function() {
-      afterUpdate();
-    }, 0);
+    if (afterUpdate) afterUpdate();
   }
 
   var hash = createHash('!/', updated);
 
   afterUpdate = function() {
     updateValue = 'bar';
-    window.location.hash.value = 'bar';
+    window.location.hash = '!/bar';
     afterUpdate = function() {
       reset(hash);
     };
