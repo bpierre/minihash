@@ -2,7 +2,7 @@
 
 Mini location.hash update system.
 
-<p align="center"><img width="434" height="393" alt="minihash illustration" src="http://scri.ch/lrk.png"></p>
+<p align="center"><img width="434" height="393" alt="minihash illustration" src="http://scri.ch/lrk-2x.png"></p>
 
 ## Usage
 
